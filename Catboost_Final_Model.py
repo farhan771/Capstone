@@ -35,7 +35,7 @@ categorical_features_indices = np.where(X.dtypes != np.float)[0]
 
 from sklearn.metrics import accuracy_score
 
-#Creating Catboost model
+#Creating Catboost model, with 50 iterations
 model = CatBoostClassifier(
     custom_loss=['Accuracy'],
     random_seed=42,
